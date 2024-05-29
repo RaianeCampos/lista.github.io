@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="lista.css">
+    <title>Lista de tarefas</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="listaContent">
+            <h1>Lista de tarefas</h1>
+            <div class="form">
+                <input type="text" id="tarefa" placeholder="Informe a tarefa">
+                <select id="prioridade">
+                    <option value="0" selected disabled hidden>Qual a prioridade?</option>
+                    <option value="1">Baixa</option>
+                    <option value="2">Média</option>
+                    <option value="3">Alta</option>
+                </select>
+                <button onclick="addElemento()" class="addBtn">INCLUIR</button>
+            </div>
+            <ul id="itemLista">
+
+            </ul>
+            <button class="limpBtn" onclick="limparLista()">LIMPAR LISTA</button>
+        </div>
+    </div>
+    <script src="lista.js"></script>
+</body>
+
+</html>
